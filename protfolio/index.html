@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aparna's Space</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="desktop">
+        <!-- Taskbar -->
+        <div class="taskbar">
+            <button class="taskbar-btn" onclick="toggleDarkMode()" title="Toggle Dark Mode">
+                🌙
+            </button>
+            <button class="taskbar-btn" onclick="toggleSound()" title="Toggle Sound">
+                🔊
+            </button>
+        </div>
+        <div class="container">
+        <div class="taskbar-btn1" onclick="openModal('downloads')">
+                <div class="icon-ext">⭐</div>
+                
+            </div>
+        <div class="main">
+            <div class="main1" style="font-size: large; padding: 10px;;"><h3 class="text">Home</h3></div>
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>hi! i'm Aparna</h1>
+            <h2>designer and developer</h2>
+        </div>
+        <div class="desktop-icons">
+            <div class="icon" onclick="openModal('about')">
+                <div class="icon-image">👤</div>
+                <div class="icon-label">About</div>
+            </div>
+
+            <div class="icon" onclick="openModal('links')">
+                <div class="icon-image">🔗</div>
+                <div class="icon-label">Links</div>
+            </div>
+
+            <div class="icon" onclick="openModal('work')">
+                <div class="icon-image">💼</div>
+                <div class="icon-label">Work</div>
+            </div>
+
+            
+
+            <div class="icon" onclick="openModal('contact')">
+                <div class="icon-image">✉️</div>
+                <div class="icon-label">Contact</div>
+            </div>
+
+            
+        </div>
+</div>
+</div>
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-links">
+                <a href="#" class="footer-link"><i class="fa-brands fa-email"></i></a>
+                <a href="#" class="footer-link"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="footer-link"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <p>© 2026 Aparna</p>
+        </div>
+    </div>
+
+    <!-- About Modal -->
+    <div id="about" class="modal">
+        <div class="window">
+            <div class="window-header">
+                <span class="window-title">about</span>
+                <button class="close-btn" onclick="closeModal('about')">✕</button>
+            </div>
+            <div class="window-content">
+                <div class="profile-header">
+                <img src="/assets/aparna.jpg" alt="Profile Photo" class="profile-photo" />
+
+  <div class="profile-text">
+    <h1 style="color: darkblue;">Aparna Raj N</h1>
+    <p class="role">Frontend Developer & Designer</p>
+    <p class="desc">Building clean, meaningful digital experiences</p>
+  </div>
+</div>
+
+                
+                
+                <div class="section-divider"></div>
+
+                <p>hi! i'm Aparna, a designer and web developer. i...</p>
+                <ul>
+                    <li>design clear website wireframes and UI layouts,</li>
+                    <li>build frontend interfaces using modern web technologies,</li>
+                    <li>and develop responsive, user-focused web experiences.</li>
+                </ul>
+                
+                <p>interested in working with me? send me an email at <a href="mailto:aparnaranj89@gmail.com">aparnaranj89@gmail.com</a>! :)</p>
+                
+                <div class="section-divider"></div>
+                
+                <h3>EDUCATION</h3>
+                <p><strong>Bachelor of Science in Computer Science</strong></p>
+                
+                <h3>OTHER INTERESTS</h3>
+                <ul>
+                    <li>Sketching and painting</li>
+                    <li>traveling</li>
+                    
+                </ul>
+                
+                <h3>LANGUAGE PROFICIENCY</h3>
+                <p>i have native fluency in English and Malayalam(Kerala), and can speak in Hindi.</p>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Links Modal -->
+    <div id="links" class="modal">
+        <div class="window">
+            <div class="window-header">
+                <span class="window-title">links</span>
+                <button class="close-btn" onclick="closeModal('links')">✕</button>
+            </div>
+            <div class="window-content">
+                <p>clicking any of the links will open a new tab!</p>
+                
+                <div class="links-grid">
+                    <a href="https://www.linkedin.com/in/aparna-raj-n-1198a7255" target="_blank" class="link-btn">
+                        <i class="fa-brands fa-linkedin" style="color: #74C0FC;"></i>
+                        <span>Linkedin</span>
+                    </a>
+                    <a href="https://github.com/APARNARAJN" target="_blank" class="link-btn">
+                        <i class="fa-brands fa-github" style="color: #74C0FC;"></i>
+                        <span>Github</span>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Work Modal -->
+    <div id="work" class="modal">
+        <div class="window">
+            <div class="window-header">
+                <span class="window-title">work</span>
+                <button class="close-btn" onclick="closeModal('work')">✕</button>
+            </div>
+            <div class="window-content">
+                <p><strong>Accepting work offers via my work email!</strong><br>I do web design and web development. :)</p>
+                
+                <div class="section-divider"></div>
+                
+                <h3>DESIGN</h3>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/assets/etoile.png" alt="ETOILE Project Image" class="project-img" style="width: 100%;"/>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ETOILE</h3>
+                        <p class="project-desc">
+                            A luxury perfume e-commerce website design focused on clean layouts, visual hierarchy, and smooth shopping flow. Designed in Figma as a personal UI/UX practice project.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Figma</span>
+                            
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.figma.com/proto/VYrSHaGYstVbXTEsMpLVpe/Untitled?node-id=41-2&p=f&t=75hGv6wUjiCJScMM-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=41%3A2" target="_blank" class="project-link link-primary">Live Demo</a>
+                            <a href="#" class="project-link link-secondary">Case Study</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="section-divider"></div>
+                <h3>WEBSITE</h3>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/assets/heartdisease.png" alt="Travel Recommendation System Project Image" class="project-img" style="width: 100%;"/>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Heart disease prediction using federated learning</h3>
+                        <p class="project-desc">
+                            A privacy-preserving machine learning system for predicting heart disease using distributed training instead of centralized medical data
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">NumPy</span>
+                            
+                        </div>
+                        <div class="project-links">
+                            <a href="https://aparnarajn.github.io/travelreccomendation/travel_recommendation.html" target="_blank" class="project-link link-primary">Live Demo</a>
+                            <a href="#" class="project-link link-secondary">Case Study</a>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>TOOLS</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">Adobe Photoshop</div>
+                    <div class="skill-tag">Figma</div>
+                </div>
+                
+                <h3>DEVELOPMENT</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">C</div>
+                    <div class="skill-tag">Python</div>
+                    <div class="skill-tag">JavaScript</div>
+                    <div class="skill-tag">HTML/CSS</div>
+                    <div class="skill-tag">React</div>
+                    
+                </div>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+
+   
+
+    <!-- Contact Modal -->
+    <div id="contact" class="modal">
+        <div class="window">
+            <div class="window-header">
+                <span class="window-title">contact</span>
+                <button class="close-btn" onclick="closeModal('contact')">✕</button>
+            </div>
+            <div class="window-content">
+                <h3>yayy mail!</h3>
+                <p>the easiest way to contact me is through email! so please direct questions to my email instead 👍</p>
+                
+                <p style="text-align: center; margin: 30px 0;">
+                    <strong>email me at: aparnarajn89@gmail.com</strong><br>
+                    or press the button below to open your mail app.
+                </p>
+                
+                <div style="text-align: center;">
+                    <a href="mailto:aparnarajn89@gmail.com" class="submit-btn">send me an email!</a>
+                </div>
+                
+                <div class="section-divider"></div>
+                
+                <h3>Or use this form:</h3>
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Downloads Modal -->
+    <div id="downloads" class="modal">
+        <div class="window">
+            <div class="window-header">
+                <span class="window-title">Resources</span>
+                <button class="close-btn" onclick="closeModal('downloads')">✕</button>
+            </div>
+            <div class="window-content">
+                <p>Beign a self taught designer and developer <br>here are some resources that helped me :)</p>
+                <p><b> These are not created by me.</b></p>
+                
+                <div class="downloads-grid">
+                    <div class="download-card">
+                        <div class="download-icon"><i class="fa-brands fa-youtube"></i><a href="https://youtu.be/VlPiVmYuoqw?si=pPAKIojPGnDt31dx"></a></div>
+                        <h4>JavaScript one shot</h4>
+                        <p>YT: Apna college</p>
+                        <small>An 11+ hour lecture, but it was worth it because I learned the concept firsthand</small>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="river-container">
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+            <use href="#gentle-wave" x="48" y="0" fill="rgba(188, 223, 255, 0.7)" />
+            <use href="#gentle-wave" x="48" y="3" fill="rgba(188, 223, 255, 0.5)" />
+            <use href="#gentle-wave" x="48" y="5" fill="#bcdfff" />
+        </g>
+    </svg>
+</div>
+    
+
+<script src="script.js"></script>
+</body>
+</html>
