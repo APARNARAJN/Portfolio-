@@ -19,7 +19,7 @@
             </button>
         </div>
         <div class="container">
-        <div class="taskbar-btn1" onclick="openModal('philosophy')" title="Product Philosophy">
+        <div class="taskbar-btn1" onclick="openModal('playground')" title="Playground">
                 <div class="icon-ext">⭐</div>
             </div>
         <div class="main">
@@ -325,49 +325,29 @@
         </div>
     </div>
 
-    <!-- Philosophy Modal -->
-    <div id="philosophy" class="modal">
+    <!-- Playground Modal -->
+    <div id="playground" class="modal">
         <div class="window">
             <div class="window-header">
-                <span class="window-title">Product Philosophy</span>
-                <button class="close-btn" onclick="closeModal('philosophy')">✕</button>
+                <span class="window-title">Playground</span>
+                <button class="close-btn" onclick="closeModal('playground')">✕</button>
             </div>
             <div class="window-content">
-                <h3>My Core Principles</h3>
-                <p>How I approach building products, solving user problems, and enabling cross-functional engineering teams:</p>
+                <h3>Fun Web Experiments</h3>
+                <p>A collection of side projects, creative experiments, and fun web widgets I've built just for the joy of making things:</p>
                 
                 <div class="downloads-grid">
-                    <div class="download-card">
-                        <div class="download-icon" style="font-size: 32px; height: 60px; width: 60px;">
-                            👤
+                    <a href="https://bloomnotes-seven.vercel.app/" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+                        <div class="download-card" style="cursor: pointer; height: 100%;">
+                            <div class="download-icon" style="font-size: 32px; height: 60px; width: 60px;">
+                                🌸
+                            </div>
+                            <h4 style="margin-top: 10px; color: var(--accent);">BloomNotes</h4>
+                            <p style="font-size: 0.9rem; margin-top: 10px; line-height: 1.4;">
+                                Pick flowers, write a heartfelt note, and get a link to a hand-drawn bouquet with a rolled note tucked inside. The coolest part? The entire bouquet is encoded directly in the URL itself!
+                            </p>
                         </div>
-                        <h4>User-First & Problem-Obsessed</h4>
-                        <p style="font-size: 0.9rem; margin-top: 10px;">Solve real user pain points, not just feature requests. Fall in love with the problem, not the solution.</p>
-                    </div>
-                    
-                    <div class="download-card">
-                        <div class="download-icon" style="font-size: 32px; height: 60px; width: 60px;">
-                            📈
-                        </div>
-                        <h4>Data-Informed Decisions</h4>
-                        <p style="font-size: 0.9rem; margin-top: 10px;">Combine quantitative metrics (analytics, A/B testing) with qualitative research to measure success and steer direction.</p>
-                    </div>
-
-                    <div class="download-card">
-                        <div class="download-icon" style="font-size: 32px; height: 60px; width: 60px;">
-                            🎯
-                        </div>
-                        <h4>Ruthless Prioritization</h4>
-                        <p style="font-size: 0.9rem; margin-top: 10px;">Maintain a laser focus on high-impact initiatives. Say "no" to good ideas to make room for great ones.</p>
-                    </div>
-
-                    <div class="download-card">
-                        <div class="download-icon" style="font-size: 32px; height: 60px; width: 60px;">
-                            🔄
-                        </div>
-                        <h4>Build, Measure, Learn</h4>
-                        <p style="font-size: 0.9rem; margin-top: 10px;">Release MVPs early, gather immediate feedback, and iterate. Speed to learning is the ultimate edge.</p>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
